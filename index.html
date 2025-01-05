@@ -97,6 +97,12 @@
                    <i class="ri-logout-box-r-fill"></i>
                    <span>Log Out</span>
                 </button>
+                <button class="sidebar__link"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                   <i class="ri-logout-box-r-fill"></i>
+                   <span>LogIn</span>
+                </button>
+
+                
              </div>
          </div>
          
@@ -104,8 +110,36 @@
 
        <main class="main container" id="main">
         <h1>Sidebar Menu</h1>
-     </main>
 
+     </main>
+   
+     <div id="id01" class="model">
+          <form action="" class="model-content animate" method="post">
+           <div class="imagecontainer">
+                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close model">&times;</span>
+                 <img src="/Image/download (1).png" alt="" class="avater">
+           </div>
+
+           <div class="container1">
+                <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter your Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit" class="btn">Login</button>
+                  <label for="">
+                     <input type="checkbox" checked="checked" name="rember">Remember me
+                  </label>
+           </div>
+            
+           <div class="container1" style="background-color: #f1f1f1;">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw"> Forget <a href="#">password?</a></span>
+           </div>
+
+          </form> 
+     </div>
       <script src="/script/script.js"></script>
 </body>
 </html>
